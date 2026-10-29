@@ -1,0 +1,2 @@
+{"id": "T12", "query": "أنشئ تنبيهًا لنفسي بعنوان 'تجهيز العرض' ونصه: تجهيز شرائح العرض قبل الخميس", "expect_write": true, "recipient": "self"}
+{"id": "T13", "query": "أرسل تنبيهًا إلى supervisor@sdaia.gov.sa بعنوان 'تأكيد الموعد' ونصه: سيتم التسليم يوم الخميس", "expect_write": true, "recipient": "supervisor@sdaia.gov.sa"}

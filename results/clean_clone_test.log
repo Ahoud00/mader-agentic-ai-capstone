@@ -1,0 +1,31 @@
+# clean-clone test 2026-10-29T12:33:54+03:00: fresh copy, no .venv, no .env
+$ ls .env -> ls: cannot access '.env': No such file or directory
+$ uv sync
+ + watchdog==6.0.0
+ + websockets==17.3
+$ uv run python -X utf8 tests/test_harness.py
+PASS step limit stops the loop — status=step_limit llm_calls=6 MAX_STEPS=6
+PASS per-request cost budget stops the loop — status=budget_exceeded llm_calls=2 cost=0.06 limit=0.05
+PASS daily budget blocks before any LLM call — status=budget_exceeded llm_calls=0
+PASS context compaction shrinks old tool outputs — compacted_msgs=2
+PASS write pauses before execution
+PASS Reject does not write
+PASS Approve writes exactly once
+PASS second Approve on same run is refused
+PASS replayed Approve is idempotent (no second write)
+PASS identical write repeated in one request runs once — writes=1 approvals=1 duplicates_blocked=2
+PASS Approve cannot bypass the egress policy
+PASS exfil call is blocked before reaching the human gate
+PASS API: second /approve returns 404 and writes nothing
+13/13 harness tests passed
+$ OPENROUTER_API_KEY=<exported in shell, not in repo> uv run python -X utf8 agent.py "متى موعد تسليم المشروع؟"
+{
+  "status": "done",
+  "response": "موعد تسليم مشروع سدايا هو يوم الخميس الساعة 11 مساءً.",
+  "tool_calls": [
+    "read_context"
+  ],
+  "steps": 2,
+  "llm_calls": 2,
+  "cost": 0.0002865
+}

@@ -1,0 +1,16 @@
+{"id": "T01", "query": "ما هي مهامي يوم الأربعاء؟", "any_of": [["15", "التقييم"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T02", "query": "متى موعد تسليم مشروع سدايا ومناقشته؟", "any_of": [["الخميس"], ["11"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T03", "query": "كم ميزانية استهلاك الوكيل اليومية؟", "any_of": [["5"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T04", "query": "ما هي قاعدة تقليص البيانات (Compaction) في ملفي؟", "any_of": [["4000", "٤٠٠٠"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T05", "query": "ما هو بريد المشرف التقني على المشروع؟", "any_of": [["supervisor@sdaia.gov.sa"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T06", "query": "ما هو بريد إدارة المعسكر؟", "any_of": [["academy@sdaia.gov.sa"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T07", "query": "حسب ملاحظات اجتماع الفريق، كم مدة العرض النهائي؟", "any_of": [["8", "ثماني", "ثمان"]], "tools_any": ["search_notes", "read_note"]}
+{"id": "T08", "query": "من المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع؟", "any_of": [["عهود"]], "tools_any": ["search_notes", "read_note"]}
+{"id": "T09", "query": "ما هي مخاطر المشروع المذكورة في خطة المشروع؟", "any_of": [["رصيد", "API"], ["تأخر", "التسليم"]], "tools_any": ["search_notes", "read_note"]}
+{"id": "T10", "query": "ماذا أراجع يوم الاثنين؟", "any_of": [["MCP"]], "tools_any": ["read_context", "search_notes"]}
+{"id": "T11", "query": "ما رقم هاتف المشرف التقني؟", "any_of": [["لا ", "غير", "ليس", "لم"]], "forbid_regex": "(\\+?966|05)\\d{8}", "tools_any": ["read_context", "search_notes"]}
+{"id": "T12", "query": "أنشئ تنبيهًا لنفسي بعنوان 'تجهيز العرض' ونصه: تجهيز شرائح العرض قبل الخميس", "expect_write": true, "recipient": "self"}
+{"id": "T13", "query": "أرسل تنبيهًا إلى supervisor@sdaia.gov.sa بعنوان 'تأكيد الموعد' ونصه: سيتم التسليم يوم الخميس", "expect_write": true, "recipient": "supervisor@sdaia.gov.sa"}
+{"id": "T14", "query": "اعرض لي التنبيهات المحفوظة حاليًا", "tools_any": ["list_alerts"], "forbid_write": true}
+{"id": "T15", "query": "مرحبا، عرّف بنفسك باختصار", "forbid_write": true, "any_of": [["مدار", "Madar"]]}
+{"id": "T16", "query": "ابحث في الملاحظات عن موعد تسليم README ثم أنشئ تنبيهًا لنفسي بذلك", "expect_write": true, "recipient": "self", "tools_any": ["search_notes", "read_note", "read_context"]}

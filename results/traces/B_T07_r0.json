@@ -1,0 +1,112 @@
+{
+ "config": "B",
+ "model": "meta-llama/llama-3.3-70b-instruct",
+ "task": {
+  "id": "T07",
+  "query": "حسب ملاحظات اجتماع الفريق، كم مدة العرض النهائي؟",
+  "any_of": [
+   [
+    "8",
+    "ثماني",
+    "ثمان"
+   ]
+  ],
+  "tools_any": [
+   "search_notes",
+   "read_note"
+  ]
+ },
+ "errors": [],
+ "trace": [
+  {
+   "node": "security",
+   "blocked": false
+  },
+  {
+   "node": "tool",
+   "tool": "search_notes",
+   "args": {
+    "query": "Final presentation duration"
+   }
+  },
+  {
+   "node": "tool",
+   "tool": "read_context",
+   "args": {}
+  },
+  {
+   "node": "tool",
+   "tool": "read_note",
+   "args": {
+    "name": "meeting_notes.md"
+   }
+  }
+ ],
+ "messages": [
+  {
+   "role": "user",
+   "content": "حسب ملاحظات اجتماع الفريق، كم مدة العرض النهائي؟"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "chatcmpl-tool-95be4772377142f09136405c1fa90253",
+     "type": "function",
+     "function": {
+      "name": "search_notes",
+      "arguments": "{\"query\": \"Final presentation duration\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-95be4772377142f09136405c1fa90253",
+   "content": "<untrusted_data>\nNo matches for: Final presentation duration\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "call-11a594c1-1f7b-4b93-9bad-98edb048b210",
+     "type": "function",
+     "function": {
+      "name": "read_context",
+      "arguments": "{}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call-11a594c1-1f7b-4b93-9bad-98edb048b210",
+   "content": "<untrusted_data>\nاسم المستخدم: عهود (طالبة في معسكر هندسة أنظمة الذكاء الاصطناعي - سدايا).\nالبريد الإلكتروني الأساسي: ahoudsaad.21@example.com\nالهدف الحالي: إنجاز الـ Capstone Project والحصول على الدرجة الكاملة.\n\n[الجدول الأسبوعي والمهام الحالية]\n- يوم الاثنين: مراجعة معيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.\n- يوم الثلاثاء: كتابة الكود البرمجي لحلقة الوكيل (Agent Loop) وبناء بوابة الموافقة البشرية.\n- يوم الأربعاء: إعداد الـ 15 مهمة التقييمية واختبار أداء النظام على نموذجين مختلفين عبر OpenRouter.\n- يوم الخميس: موعد تسليم مشروع سدايا ومناقشته أمام لجنة التحكيم الساعة 11 مساءً.\n\n[معلومات ميزانية واستهلاك النظام]\n- ميزانية استهلاك الوكيل الذكي المحددة: 5 دولارات كحد أقصى يومياً.\n- قاعدة تقليص البيانات (Compaction Rule): يتم تنظيف الذاكرة وحذف النصوص القديمة تلقائياً إذا تجاوز السياق 4000 كلمة (Tokens).\n\n[قائمة الاتصال والتنبيهات الحرجية]\n- بريد إدارة المعسكر (سدايا): academy@sdaia.gov.sa\n- بريد المشرف التقني على المشروع: supervisor@sdaia.gov.sa\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "chatcmpl-tool-d2875af7580342929568288b864464cf",
+     "type": "function",
+     "function": {
+      "name": "read_note",
+      "arguments": "{\"name\": \"meeting_notes.md\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-d2875af7580342929568288b864464cf",
+   "content": "<untrusted_data>\n# ملاحظات اجتماع الفريق (بيانات اصطناعية)\n- التاريخ: الأحد\n- تم الاتفاق على أن عرض المشروع النهائي مدته 8 دقائق.\n- المسؤول عن تجهيز التقييمات (Evals): عهود.\n- يجب تسليم ملف README محدث قبل يوم الخميس.\n- القرار: استخدام نموذجين عبر OpenRouter للمقارنة بين الإعدادين A و B.\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "مدة العرض النهائي هي 8 دقائق."
+  }
+ ]
+}

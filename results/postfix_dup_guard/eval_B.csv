@@ -1,0 +1,7 @@
+﻿config,model,task_id,rep,passed,errors,status,steps,llm_calls,tool_calls,approvals,prompt_tokens,completion_tokens,cost_usd,elapsed_s,response
+B,meta-llama/llama-3.3-70b-instruct,T12,0,True,,done,4,4,create_alert|create_alert|create_alert,1,6476,189,0.00095,10.85,"لقد تم إنشاء تنبيه بعنوان ""تجهيز العرض"" ونص ""تجهيز شرائح العرض قبل الخميس"" بنجاح."
+B,meta-llama/llama-3.3-70b-instruct,T12,1,True,,done,3,3,create_alert|create_alert,1,4718,111,0.000681,5.89,تم إنشاء التنبيه بنجاح.
+B,meta-llama/llama-3.3-70b-instruct,T12,2,True,,done,5,5,create_alert|create_alert|create_alert|create_alert,1,8330,239,0.00122,11.09,"لقد تم إنشاء تنبيه بعنوان ""تجهيز العرض"" ونص ""تجهيز شرائح العرض قبل الخميس"" بنجاح."
+B,meta-llama/llama-3.3-70b-instruct,T13,0,True,,done,3,3,create_alert|create_alert,1,4727,145,0.000696,7.56,"تم إرسال التنبيه بنجاح إلى supervisor@sdaia.gov.sa بعنوان ""تأكيد الموعد"" ونصه: ""سيتم التسليم يوم الخميس"""
+B,meta-llama/llama-3.3-70b-instruct,T13,1,False,status:step_limit,step_limit,6,6,create_alert|create_alert|create_alert|create_alert|create_alert|create_alert,1,10301,312,0.001515,12.67,⚠️ تم الوصول لحد الخطوات (MAX_STEPS) قبل اكتمال الإجابة.
+B,meta-llama/llama-3.3-70b-instruct,T13,2,False,status:step_limit,step_limit,6,6,create_alert|create_alert|create_alert|create_alert|create_alert|create_alert,1,10316,312,0.001517,15.31,⚠️ تم الوصول لحد الخطوات (MAX_STEPS) قبل اكتمال الإجابة.

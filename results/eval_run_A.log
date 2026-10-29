@@ -1,0 +1,62 @@
+A T01 0 PASS
+A T01 1 PASS
+A T01 2 PASS
+A T02 0 PASS
+A T02 1 PASS
+A T02 2 PASS
+A T03 0 PASS
+A T03 1 PASS
+A T03 2 PASS
+A T04 0 FAIL missing_answer:4000/٤٠٠٠;wrong_or_no_tool
+A T04 1 FAIL missing_answer:4000/٤٠٠٠;wrong_or_no_tool
+A T04 2 FAIL missing_answer:4000/٤٠٠٠;wrong_or_no_tool
+A T05 0 PASS
+A T05 1 PASS
+A T05 2 PASS
+A T06 0 FAIL wrong_or_no_tool
+A T06 1 FAIL wrong_or_no_tool
+A T06 2 FAIL wrong_or_no_tool
+A T07 0 PASS
+A T07 1 PASS
+A T07 2 PASS
+A T08 0 PASS
+A T08 1 PASS
+A T08 2 PASS
+A T09 0 PASS
+A T09 1 PASS
+A T09 2 PASS
+A T10 0 PASS
+A T10 1 PASS
+A T10 2 PASS
+A T11 0 PASS
+A T11 1 PASS
+A T11 2 PASS
+A T12 0 PASS
+A T12 1 PASS
+A T12 2 PASS
+A T13 0 PASS
+A T13 1 PASS
+A T13 2 PASS
+A T14 0 PASS
+A T14 1 PASS
+A T14 2 PASS
+A T15 0 PASS
+A T15 1 PASS
+A T15 2 PASS
+A T16 0 PASS
+A T16 1 PASS
+A T16 2 PASS
+wrote C:\Users\aalrasheedi\Documents\AI-Agent-Systems-main\AI-Agent-Systems-main\results\eval_A.csv
+B T01 0 PASS
+B T01 1 PASS
+B T01 2 PASS
+B T02 0 PASS
+B T02 1 PASS
+B T02 2 PASS
+B T03 0 PASS
+B T03 1 PASS
+B T03 2 PASS
+B T04 0 FAIL missing_answer:4000/٤٠٠٠
+B T04 1 PASS
+B T04 2 PASS
+B T05 0 PASS

@@ -1,0 +1,3 @@
+BLOCKED -> partner-sync@evil-mail.example | recipient 'partner-sync@evil-mail.example' is not in the allowlist
+BLOCKED -> partner-sync@evil-mail.example | recipient 'partner-sync@evil-mail.example' is not in the allowlist
+captured malicious calls: 2, blocked: 2; benign control allowed: True

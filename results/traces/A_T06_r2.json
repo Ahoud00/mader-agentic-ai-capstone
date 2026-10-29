@@ -1,0 +1,36 @@
+{
+ "config": "A",
+ "model": "openai/gpt-4o-mini",
+ "task": {
+  "id": "T06",
+  "query": "ما هو بريد إدارة المعسكر؟",
+  "any_of": [
+   [
+    "academy@sdaia.gov.sa"
+   ]
+  ],
+  "tools_any": [
+   "read_context",
+   "search_notes"
+  ]
+ },
+ "errors": [
+  "wrong_or_no_tool"
+ ],
+ "trace": [
+  {
+   "node": "security",
+   "blocked": false
+  }
+ ],
+ "messages": [
+  {
+   "role": "user",
+   "content": "ما هو بريد إدارة المعسكر؟"
+  },
+  {
+   "role": "assistant",
+   "content": "بريد إدارة المعسكر هو: academy@sdaia.gov.sa."
+  }
+ ]
+}

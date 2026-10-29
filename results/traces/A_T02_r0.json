@@ -1,0 +1,63 @@
+{
+ "config": "A",
+ "model": "openai/gpt-4o-mini",
+ "task": {
+  "id": "T02",
+  "query": "متى موعد تسليم مشروع سدايا ومناقشته؟",
+  "any_of": [
+   [
+    "الخميس"
+   ],
+   [
+    "11"
+   ]
+  ],
+  "tools_any": [
+   "read_context",
+   "search_notes"
+  ]
+ },
+ "errors": [],
+ "trace": [
+  {
+   "node": "security",
+   "blocked": false
+  },
+  {
+   "node": "tool",
+   "tool": "search_notes",
+   "args": {
+    "query": "موعد تسليم مشروع سدايا"
+   }
+  }
+ ],
+ "messages": [
+  {
+   "role": "user",
+   "content": "متى موعد تسليم مشروع سدايا ومناقشته؟"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "call_y77Y48NspLuujH4QinAPkaLc",
+     "type": "function",
+     "function": {
+      "name": "search_notes",
+      "arguments": "{\"query\":\"موعد تسليم مشروع سدايا\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_y77Y48NspLuujH4QinAPkaLc",
+   "content": "<untrusted_data>\n[my_context.text:1] اسم المستخدم: عهود (طالبة في معسكر هندسة أنظمة الذكاء الاصطناعي - سدايا).\n[my_context.text:9] - يوم الخميس: موعد تسليم مشروع سدايا ومناقشته أمام لجنة التحكيم الساعة 11 مساءً.\n[my_context.text:16] - بريد إدارة المعسكر (سدايا): academy@sdaia.gov.sa\n[my_context.text:17] - بريد المشرف التقني على المشروع: supervisor@sdaia.gov.sa\n[data/notes/meeting_notes.md:3] - تم الاتفاق على أن عرض المشروع النهائي مدته 8 دقائق.\n[data/notes/meeting_notes.md:5] - يجب تسليم ملف README محدث قبل يوم الخميس.\n[data/notes/project_plan.md:1] # خطة المشروع (بيانات اصطناعية)\n[data/notes/project_plan.md:6] - المخاطر: انتهاء رصيد API، تأخر التسليم.\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "موعد تسليم مشروع سدايا ومناقشته أمام لجنة التحكيم هو يوم الخميس الساعة 11 مساءً."
+  }
+ ]
+}

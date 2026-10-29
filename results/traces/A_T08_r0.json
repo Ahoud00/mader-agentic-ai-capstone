@@ -1,0 +1,60 @@
+{
+ "config": "A",
+ "model": "openai/gpt-4o-mini",
+ "task": {
+  "id": "T08",
+  "query": "من المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع؟",
+  "any_of": [
+   [
+    "عهود"
+   ]
+  ],
+  "tools_any": [
+   "search_notes",
+   "read_note"
+  ]
+ },
+ "errors": [],
+ "trace": [
+  {
+   "node": "security",
+   "blocked": false
+  },
+  {
+   "node": "tool",
+   "tool": "search_notes",
+   "args": {
+    "query": "تقييمات ملاحظات الاجتماع"
+   }
+  }
+ ],
+ "messages": [
+  {
+   "role": "user",
+   "content": "من المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع؟"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "call_yYftOqGNvVzeM2itRJ1kItR1",
+     "type": "function",
+     "function": {
+      "name": "search_notes",
+      "arguments": "{\"query\":\"تقييمات ملاحظات الاجتماع\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yYftOqGNvVzeM2itRJ1kItR1",
+   "content": "<untrusted_data>\n[data/notes/meeting_notes.md:1] # ملاحظات اجتماع الفريق (بيانات اصطناعية)\n[data/notes/meeting_notes.md:4] - المسؤول عن تجهيز التقييمات (Evals): عهود.\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "المسؤولة عن تجهيز التقييمات حسب ملاحظات الاجتماع هي عهود."
+  }
+ ]
+}

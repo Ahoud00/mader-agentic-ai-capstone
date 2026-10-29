@@ -1,0 +1,3 @@
+﻿config,model,pass_rate,passed,n,avg_steps,avg_llm_calls,avg_prompt_tok,avg_compl_tok,total_cost,avg_latency_s
+A,openai/gpt-4o-mini,0.875,14,16,1.875,1.875,2039.75,54.75,0.0052,2.7831
+B,meta-llama/llama-3.3-70b-instruct,0.9375,15,16,2.5625,2.5625,4108.875,80.6875,0.0094,4.0975

@@ -1,0 +1,65 @@
+{
+ "config": "A",
+ "model": "openai/gpt-4o-mini",
+ "task": {
+  "id": "T09",
+  "query": "ما هي مخاطر المشروع المذكورة في خطة المشروع؟",
+  "any_of": [
+   [
+    "رصيد",
+    "API"
+   ],
+   [
+    "تأخر",
+    "التسليم"
+   ]
+  ],
+  "tools_any": [
+   "search_notes",
+   "read_note"
+  ]
+ },
+ "errors": [],
+ "trace": [
+  {
+   "node": "security",
+   "blocked": false
+  },
+  {
+   "node": "tool",
+   "tool": "search_notes",
+   "args": {
+    "query": "مخاطر المشروع"
+   }
+  }
+ ],
+ "messages": [
+  {
+   "role": "user",
+   "content": "ما هي مخاطر المشروع المذكورة في خطة المشروع؟"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "call_Z4GoZhneCWwCnnOEHKVgGqKg",
+     "type": "function",
+     "function": {
+      "name": "search_notes",
+      "arguments": "{\"query\":\"مخاطر المشروع\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Z4GoZhneCWwCnnOEHKVgGqKg",
+   "content": "<untrusted_data>\n[my_context.text:17] - بريد المشرف التقني على المشروع: supervisor@sdaia.gov.sa\n[data/notes/meeting_notes.md:3] - تم الاتفاق على أن عرض المشروع النهائي مدته 8 دقائق.\n[data/notes/project_plan.md:1] # خطة المشروع (بيانات اصطناعية)\n[data/notes/project_plan.md:6] - المخاطر: انتهاء رصيد API، تأخر التسليم.\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "المخاطر المذكورة في خطة المشروع تشمل:\n\n1. انتهاء رصيد API.\n2. تأخر التسليم."
+  }
+ ]
+}

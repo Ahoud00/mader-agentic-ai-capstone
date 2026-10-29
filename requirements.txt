@@ -1,0 +1,9 @@
+openai==3.41.0
+mcp==1.30.0
+streamlit==1.66.1
+fastapi==0.162.0
+uvicorn==0.54.0
+httpx==0.28.1
+python-dotenv==1.2.4
+requests==2.34.2
+pandas==3.1.0

@@ -1,0 +1,33 @@
+A T01 PASS
+A T02 PASS
+A T03 PASS
+A T04 FAIL missing_answer:4000/٤٠٠٠;wrong_or_no_tool
+A T05 PASS
+A T06 FAIL wrong_or_no_tool
+A T07 PASS
+A T08 PASS
+A T09 PASS
+A T10 PASS
+A T11 PASS
+A T12 PASS
+A T13 PASS
+A T14 PASS
+A T15 PASS
+A T16 PASS
+B T01 PASS
+B T02 PASS
+B T03 PASS
+B T04 PASS
+B T05 PASS
+B T06 PASS
+B T07 PASS
+B T08 PASS
+B T09 FAIL missing_answer:رصيد/API;missing_answer:تأخر/التسليم
+B T10 PASS
+B T11 PASS
+B T12 PASS
+B T13 PASS
+B T14 PASS
+B T15 PASS
+B T16 PASS
+wrote C:\Users\aalrasheedi\Documents\AI-Agent-Systems-main\AI-Agent-Systems-main\results\eval_results.csv

@@ -1,0 +1,50 @@
+B T01 0 PASS
+B T01 1 PASS
+B T01 2 PASS
+B T02 0 PASS
+B T02 1 PASS
+B T02 2 PASS
+B T03 0 PASS
+B T03 1 PASS
+B T03 2 PASS
+B T04 0 PASS
+B T04 1 PASS
+B T04 2 PASS
+B T05 0 PASS
+B T05 1 PASS
+B T05 2 PASS
+B T06 0 PASS
+B T06 1 PASS
+B T06 2 PASS
+B T07 0 PASS
+B T07 1 PASS
+B T07 2 PASS
+B T08 0 FAIL missing_answer:عهود
+B T08 1 PASS
+B T08 2 FAIL missing_answer:عهود
+B T09 0 FAIL missing_answer:رصيد/API;missing_answer:تأخر/التسليم
+B T09 1 FAIL missing_answer:رصيد/API;missing_answer:تأخر/التسليم
+B T09 2 FAIL missing_answer:رصيد/API;missing_answer:تأخر/التسليم
+B T10 0 PASS
+B T10 1 PASS
+B T10 2 PASS
+B T11 0 PASS
+B T11 1 PASS
+B T11 2 PASS
+B T12 0 FAIL status:step_limit
+B T12 1 PASS
+B T12 2 PASS
+B T13 0 FAIL status:step_limit
+B T13 1 PASS
+B T13 2 PASS
+B T14 0 PASS
+B T14 1 PASS
+B T14 2 PASS
+B T15 0 PASS
+B T15 1 PASS
+B T15 2 PASS
+B T16 0 PASS
+B T16 1 PASS
+B T16 2 PASS
+wrote C:\Users\aalrasheedi\Documents\AI-Agent-Systems-main\AI-Agent-Systems-main\results\eval_B.csv
+{'config': 'B', 'model': 'meta-llama/llama-3.3-70b-instruct', 'tasks': 16, 'runs': 48, 'pass_rate': 0.8542, 'pass_all_k': '12/16', 'pass_any_k': '15/16', 'avg_llm_requests': 2.833, 'avg_tokens': 4962.8, 'total_cost_usd': 0.03689, 'avg_latency_s': 5.15}

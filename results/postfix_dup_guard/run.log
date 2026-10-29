@@ -1,0 +1,8 @@
+B T12 0 PASS
+B T12 1 PASS
+B T12 2 PASS
+B T13 0 PASS
+B T13 1 FAIL status:step_limit
+B T13 2 FAIL status:step_limit
+wrote results/postfix_dup_guard\eval_B.csv
+{'config': 'B', 'model': 'meta-llama/llama-3.3-70b-instruct', 'tasks': 2, 'runs': 6, 'pass_rate': 0.6667, 'pass_all_k': '1/2', 'pass_any_k': '2/2', 'avg_llm_requests': 4.5, 'avg_tokens': 7696.0, 'total_cost_usd': 0.00658, 'avg_latency_s': 10.56}

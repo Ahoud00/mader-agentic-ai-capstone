@@ -1,0 +1,17 @@
+# secrets
+.env
+.env.*
+!.env.example
+# python
+.venv/
+venv/
+__pycache__/
+*.pyc
+# runtime data
+data/alerts.jsonl
+# media / large
+*.mov
+*.xlsx
+.ipynb_checkpoints/
+.DS_Store
+data/cost_ledger.jsonl

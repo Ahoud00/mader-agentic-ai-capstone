@@ -1,0 +1,110 @@
+{
+ "config": "B",
+ "model": "meta-llama/llama-3.3-70b-instruct",
+ "task": {
+  "id": "T08",
+  "query": "من المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع؟",
+  "any_of": [
+   [
+    "عهود"
+   ]
+  ],
+  "tools_any": [
+   "search_notes",
+   "read_note"
+  ]
+ },
+ "errors": [],
+ "trace": [
+  {
+   "node": "security",
+   "blocked": false
+  },
+  {
+   "node": "tool",
+   "tool": "search_notes",
+   "args": {
+    "query": "الاجتماع"
+   }
+  },
+  {
+   "node": "tool",
+   "tool": "read_context",
+   "args": {}
+  },
+  {
+   "node": "tool",
+   "tool": "read_note",
+   "args": {
+    "name": "meeting_notes.md"
+   }
+  }
+ ],
+ "messages": [
+  {
+   "role": "user",
+   "content": "من المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع؟"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "chatcmpl-tool-84c04da8e5fd493ea6248b18b3828328",
+     "type": "function",
+     "function": {
+      "name": "search_notes",
+      "arguments": "{\"query\": \"الاجتماع\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-84c04da8e5fd493ea6248b18b3828328",
+   "content": "<untrusted_data>\nNo matches for: الاجتماع\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "chatcmpl-tool-f5205fe942f44bed8487c59082a6043b",
+     "type": "function",
+     "function": {
+      "name": "read_context",
+      "arguments": "{}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-f5205fe942f44bed8487c59082a6043b",
+   "content": "<untrusted_data>\nاسم المستخدم: عهود (طالبة في معسكر هندسة أنظمة الذكاء الاصطناعي - سدايا).\nالبريد الإلكتروني الأساسي: ahoudsaad.21@example.com\nالهدف الحالي: إنجاز الـ Capstone Project والحصول على الدرجة الكاملة.\n\n[الجدول الأسبوعي والمهام الحالية]\n- يوم الاثنين: مراجعة معيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.\n- يوم الثلاثاء: كتابة الكود البرمجي لحلقة الوكيل (Agent Loop) وبناء بوابة الموافقة البشرية.\n- يوم الأربعاء: إعداد الـ 15 مهمة التقييمية واختبار أداء النظام على نموذجين مختلفين عبر OpenRouter.\n- يوم الخميس: موعد تسليم مشروع سدايا ومناقشته أمام لجنة التحكيم الساعة 11 مساءً.\n\n[معلومات ميزانية واستهلاك النظام]\n- ميزانية استهلاك الوكيل الذكي المحددة: 5 دولارات كحد أقصى يومياً.\n- قاعدة تقليص البيانات (Compaction Rule): يتم تنظيف الذاكرة وحذف النصوص القديمة تلقائياً إذا تجاوز السياق 4000 كلمة (Tokens).\n\n[قائمة الاتصال والتنبيهات الحرجية]\n- بريد إدارة المعسكر (سدايا): academy@sdaia.gov.sa\n- بريد المشرف التقني على المشروع: supervisor@sdaia.gov.sa\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "",
+   "tool_calls": [
+    {
+     "id": "chatcmpl-tool-bb2ceb2c90454a059796311b15e663a9",
+     "type": "function",
+     "function": {
+      "name": "read_note",
+      "arguments": "{\"name\": \"meeting_notes.md\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "chatcmpl-tool-bb2ceb2c90454a059796311b15e663a9",
+   "content": "<untrusted_data>\n# ملاحظات اجتماع الفريق (بيانات اصطناعية)\n- التاريخ: الأحد\n- تم الاتفاق على أن عرض المشروع النهائي مدته 8 دقائق.\n- المسؤول عن تجهيز التقييمات (Evals): عهود.\n- يجب تسليم ملف README محدث قبل يوم الخميس.\n- القرار: استخدام نموذجين عبر OpenRouter للمقارنة بين الإعدادين A و B.\n</untrusted_data>"
+  },
+  {
+   "role": "assistant",
+   "content": "المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع هو عهود."
+  }
+ ]
+}

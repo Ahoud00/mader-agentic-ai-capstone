@@ -1,0 +1,33 @@
+﻿config,model,task_id,passed,errors,status,steps,llm_calls,tool_calls,approvals,prompt_tokens,completion_tokens,cost_usd,elapsed_s,response
+A,openai/gpt-4o-mini,T01,True,,done,2,2,read_context,0,2298,41,0.000369,8.92,مهامك يوم الأربعاء هي:  - إعداد الـ 15 مهمة التقييمية. - اختبار أداء النظام على نموذجين مختلفين عبر OpenRouter.
+A,openai/gpt-4o-mini,T02,True,,done,2,2,search_notes,0,2238,47,0.000364,2.08,موعد تسليم مشروع سدايا ومناقشته أمام لجنة التحكيم هو يوم الخميس الساعة 11 مساءً.
+A,openai/gpt-4o-mini,T03,True,,done,2,2,read_context,0,2304,31,0.000364,2.19,ميزانية استهلاك الوكيل اليومية المحددة هي 5 دولارات كحد أقصى.
+A,openai/gpt-4o-mini,T04,False,missing_answer:4000/٤٠٠٠;wrong_or_no_tool,done,1,1,,0,1001,120,0.000222,1.76,قاعدة تقليص البيانات (Compaction) في ملفك تشير إلى عملية تقليل حجم البيانات المخزنة عن طريق إزالة المعلومات القديمة أو غير الضرورية، مما يساعد في تحسين الأداء وتسهيل الوصول إلى المعلومات الأكثر أهمية. في سياق المحادثات، قد يتم تقليص البيانات القديمة للحفاظ على حجم المحادثة ضمن حدود معينة، مما يضمن أ
+A,openai/gpt-4o-mini,T05,True,,done,2,2,read_context,0,2304,31,0.000364,2.12,بريد المشرف التقني على المشروع هو: **supervisor@sdaia.gov.sa**.
+A,openai/gpt-4o-mini,T06,False,wrong_or_no_tool,done,1,1,,0,993,15,0.000158,1.38,بريد إدارة المعسكر هو: academy@sdaia.gov.sa.
+A,openai/gpt-4o-mini,T07,True,,done,2,2,search_notes,0,2054,25,0.000323,2.02,مدة العرض النهائي هي 8 دقائق.
+A,openai/gpt-4o-mini,T08,True,,done,2,2,search_notes,0,2083,39,0.000336,2.17,المسؤولة عن تجهيز التقييمات حسب ملاحظات الاجتماع هي عهود.
+A,openai/gpt-4o-mini,T09,True,,done,2,2,search_notes,0,2118,42,0.000343,2.06,المخاطر المذكورة في خطة المشروع تشمل:  1. انتهاء رصيد API. 2. تأخر التسليم.
+A,openai/gpt-4o-mini,T10,True,,done,2,2,read_context,0,2298,37,0.000367,1.85,يوم الاثنين، لديك مراجعة لمعيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.
+A,openai/gpt-4o-mini,T11,True,,done,2,2,read_context,0,2300,46,0.000373,1.91,عذرًا، لا أستطيع تزويدك برقم هاتف المشرف التقني. لكن يمكنك التواصل معه عبر البريد الإلكتروني: supervisor@sdaia.gov.sa.
+A,openai/gpt-4o-mini,T12,True,,done,2,2,create_alert,1,2079,57,0.000269,3.02,"تم إنشاء التنبيه بعنوان ""تجهيز العرض"" بنجاح. النص هو: ""تجهيز شرائح العرض قبل الخميس""."
+A,openai/gpt-4o-mini,T13,True,,done,2,2,create_alert,1,2090,72,0.00028,3.23,"تم إرسال التنبيه بعنوان ""تأكيد الموعد"" إلى supervisor@sdaia.gov.sa بنجاح. نص التنبيه هو: ""سيتم التسليم يوم الخميس""."
+A,openai/gpt-4o-mini,T14,True,,done,2,2,list_alerts,0,2161,123,0.000398,4.15,لديك التنبيهات المحفوظة التالية:  1. **تجهيز العرض**    - **الرسالة:** تجهيز شرائح العرض قبل الخميس    - **المستلم:** نفسك    - **تاريخ الإنشاء:** 29 أكتوبر 2026  2. **تأكيد الموعد**    - **الرسالة:** سيتم التسليم يوم الخميس    - **المستلم:** supervisor@sdaia.gov.sa    - **تاريخ الإنشاء:** 29 أكتوبر
+A,openai/gpt-4o-mini,T15,True,,done,1,1,,0,998,63,0.000188,1.43,مرحبًا! أنا مدار، وكيل الإنتاجية في نظام رفيق. أساعدك في إدارة جدولك، مهامك، ميزانيتك، جهات الاتصال، والملاحظات. إذا كان لديك أي استفسار أو تحتاج إلى مساعدة، فلا تتردد في طرحه!
+A,openai/gpt-4o-mini,T16,True,,done,3,3,search_notes|create_alert,1,3317,87,0.000473,4.24,لقد وجدت أن موعد تسليم ملف README المحدث هو قبل يوم الخميس. وقد قمت بإنشاء تنبيه لنفسي بذلك.
+B,meta-llama/llama-3.3-70b-instruct,T01,True,,done,2,2,read_context,0,3182,44,0.000447,2.61,مهامك في يوم الأربعاء هي إعداد المهام التقييمية واختبار أداء النظام.
+B,meta-llama/llama-3.3-70b-instruct,T02,True,,done,2,2,search_notes,0,3074,57,0.000438,2.78,موعد تسليم مشروع سدايا ومناقشته هو يوم الخميس الساعة 11 مساءً.
+B,meta-llama/llama-3.3-70b-instruct,T03,True,,done,2,2,read_context,0,3190,37,0.000445,2.26,ميزانية استهلاك الوكيل اليومية هي 5 دولارات.
+B,meta-llama/llama-3.3-70b-instruct,T04,True,,done,2,2,read_context,0,3198,69,0.000459,2.74,قاعدة تقليص البيانات (Compaction) في ملفك هي أن يتم تنظيف الذاكرة وحذف النصوص القديمة تلقائياً إذا تجاوز السياق 4000 كلمة (Tokens).
+B,meta-llama/llama-3.3-70b-instruct,T05,True,,done,3,3,read_context|read_context,0,5385,73,0.000756,5.81,بريد المشرف التقني على المشروع هو: supervisor@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T06,True,,done,2,2,search_notes,0,2903,45,0.00041,2.28,بريد إدارة المعسكر هو academy@sdaia.gov.sa.
+B,meta-llama/llama-3.3-70b-instruct,T07,True,,done,4,4,search_notes|read_context|read_note,0,6685,70,0.00093,4.72,مدة العرض النهائي هي 8 دقائق.
+B,meta-llama/llama-3.3-70b-instruct,T08,True,,done,2,2,search_notes,0,3025,206,0.000491,5.73,المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع هو عهود.
+B,meta-llama/llama-3.3-70b-instruct,T09,False,missing_answer:رصيد/API;missing_answer:تأخر/التسليم,done,4,4,search_notes|read_context|search_notes,0,6632,90,0.000931,4.85,لا توجد مخاطر مذكورة في خطة المشروع.
+B,meta-llama/llama-3.3-70b-instruct,T10,True,,done,2,2,read_context,0,3182,43,0.000447,2.61,مراجعة معيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.
+B,meta-llama/llama-3.3-70b-instruct,T11,True,,done,3,3,read_context|read_context,0,5376,55,0.000748,3.72,رقم هاتف المشرف التقني غير متوفر في السياق.
+B,meta-llama/llama-3.3-70b-instruct,T12,True,,done,3,3,create_alert|create_alert,2,4476,139,0.00066,6.93,"لقد تم إنشاء تنبيه بعنوان ""تجهيز العرض"" ونص ""تجهيز شرائح العرض قبل الخميس"" بنجاح."
+B,meta-llama/llama-3.3-70b-instruct,T13,True,,done,3,3,create_alert|create_alert,2,4485,138,0.000661,6.7,تم إرسال التنبيه بنجاح إلى supervisor@sdaia.gov.sa بعنوان 'تأكيد الموعد' ونصه: سيتم التسليم يوم الخميس.
+B,meta-llama/llama-3.3-70b-instruct,T14,True,,done,2,2,list_alerts,0,3329,40,0.000465,3.45,توجد حاليًا 7 تنبيهات محفوظة.
+B,meta-llama/llama-3.3-70b-instruct,T15,True,,done,2,2,read_context,0,3194,100,0.000471,3.35,مرحبا! أنا مدار، وكي الذكاء الاصطناعي في نظام REFEEQ. أنا هنا لمساعدتك في إدارة جدولك وتنظيم مهامك وتذكيرك بالموعد النهائي لتقديم مشروع Capstone في معسكر سدايا. هل هناك شيء محدد تريد مساعدتي به؟
+B,meta-llama/llama-3.3-70b-instruct,T16,True,,done,3,3,search_notes|create_alert,1,4426,85,0.000632,5.02,تم إنشاء تنبيه بنجاح.

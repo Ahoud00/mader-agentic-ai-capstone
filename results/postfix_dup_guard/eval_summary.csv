@@ -1,0 +1,2 @@
+﻿config,model,tasks,runs,pass_rate,pass_all_k,pass_any_k,avg_llm_requests,avg_tokens,total_cost_usd,avg_latency_s
+B,meta-llama/llama-3.3-70b-instruct,2,6,0.6667,1/2,2/2,4.5,7696.0,0.00658,10.56

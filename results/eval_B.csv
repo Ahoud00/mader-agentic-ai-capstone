@@ -1,0 +1,49 @@
+﻿config,model,task_id,rep,passed,errors,status,steps,llm_calls,tool_calls,approvals,prompt_tokens,completion_tokens,cost_usd,elapsed_s,response
+B,meta-llama/llama-3.3-70b-instruct,T01,0,True,,done,2,2,read_context,0,3332,44,0.000467,4.32,مهامك في يوم الأربعاء هي إعداد المهام التقييمية واختبار أداء النظام.
+B,meta-llama/llama-3.3-70b-instruct,T01,1,True,,done,2,2,read_context,0,3332,44,0.000467,3.0,مهامك في يوم الأربعاء هي إعداد المهام التقييمية واختبار أداء النظام.
+B,meta-llama/llama-3.3-70b-instruct,T01,2,True,,done,2,2,read_context,0,3332,44,0.000467,2.6,مهامك في يوم الأربعاء هي إعداد المهام التقييمية واختبار أداء النظام.
+B,meta-llama/llama-3.3-70b-instruct,T02,0,True,,done,2,2,search_notes,0,3224,57,0.000458,2.75,موعد تسليم مشروع سدايا ومناقشته هو يوم الخميس الساعة 11 مساءً.
+B,meta-llama/llama-3.3-70b-instruct,T02,1,True,,done,2,2,search_notes,0,3224,57,0.000458,3.13,موعد تسليم مشروع سدايا ومناقشته هو يوم الخميس الساعة 11 مساءً.
+B,meta-llama/llama-3.3-70b-instruct,T02,2,True,,done,2,2,search_notes,0,3224,57,0.000458,2.49,موعد تسليم مشروع سدايا ومناقشته هو يوم الخميس الساعة 11 مساءً.
+B,meta-llama/llama-3.3-70b-instruct,T03,0,True,,done,2,2,read_context,0,3340,37,0.000466,2.03,ميزانية استهلاك الوكيل اليومية هي 5 دولارات.
+B,meta-llama/llama-3.3-70b-instruct,T03,1,True,,done,2,2,read_context,0,3340,37,0.000466,2.06,ميزانية استهلاك الوكيل اليومية هي 5 دولارات.
+B,meta-llama/llama-3.3-70b-instruct,T03,2,True,,done,2,2,read_context,0,3340,37,0.000466,2.16,ميزانية استهلاك الوكيل اليومية هي 5 دولارات.
+B,meta-llama/llama-3.3-70b-instruct,T04,0,True,,done,2,2,read_context,0,3348,69,0.00048,2.81,قاعدة تقليص البيانات (Compaction) في ملفك هي أن يتم تنظيف الذاكرة وحذف النصوص القديمة تلقائياً إذا تجاوز السياق 4000 كلمة (Tokens).
+B,meta-llama/llama-3.3-70b-instruct,T04,1,True,,done,2,2,read_context,0,3348,69,0.00048,2.97,قاعدة تقليص البيانات (Compaction) في ملفك هي: يتم تنظيف الذاكرة وحذف النصوص القديمة تلقائياً إذا تجاوز السياق 4000 كلمة (Tokens).
+B,meta-llama/llama-3.3-70b-instruct,T04,2,True,,done,2,2,read_context,0,3348,69,0.00048,2.65,قاعدة تقليص البيانات (Compaction) في ملفك هي: يتم تنظيف الذاكرة وحذف النصوص القديمة تلقائياً إذا تجاوز السياق 4000 كلمة (Tokens).
+B,meta-llama/llama-3.3-70b-instruct,T05,0,True,,done,3,3,read_context|read_context,0,5610,73,0.000787,4.08,بريد المشرف التقني على المشروع هو: supervisor@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T05,1,True,,done,3,3,read_context|read_context,0,5610,73,0.000787,3.74,بريد المشرف التقني على المشروع هو: supervisor@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T05,2,True,,done,3,3,read_context|read_context,0,5610,56,0.00078,3.22,بريد المشرف التقني على المشروع هو: supervisor@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T06,0,True,,done,3,3,read_context|read_context,0,5604,53,0.000778,3.63,بريد إدارة المعسكر هو academy@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T06,1,True,,done,2,2,read_context,0,3334,34,0.000464,2.54,بريد إدارة المعسكر هو academy@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T06,2,True,,done,2,2,read_context,0,3334,34,0.000464,2.28,بريد إدارة المعسكر هو academy@sdaia.gov.sa
+B,meta-llama/llama-3.3-70b-instruct,T07,0,True,,done,4,4,search_notes|read_context|read_note,0,6986,70,0.001851,15.04,مدة العرض النهائي هي 8 دقائق.
+B,meta-llama/llama-3.3-70b-instruct,T07,1,True,,done,3,3,search_notes|read_note,0,4659,58,0.000652,3.54,مدة العرض النهائي هي 8 دقائق.
+B,meta-llama/llama-3.3-70b-instruct,T07,2,True,,done,3,3,search_notes|read_note,0,4659,58,0.000652,4.85,مدة العرض النهائي هي 8 دقائق.
+B,meta-llama/llama-3.3-70b-instruct,T08,0,False,missing_answer:عهود,done,3,3,search_notes|read_context,0,4913,64,0.000689,3.56,المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع هو المشرف التقني على المشروع.
+B,meta-llama/llama-3.3-70b-instruct,T08,1,True,,done,4,4,search_notes|read_context|read_note,0,6975,85,0.000976,7.89,المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع هو عهود.
+B,meta-llama/llama-3.3-70b-instruct,T08,2,False,missing_answer:عهود,done,3,3,search_notes|read_context,0,4913,64,0.000689,3.51,المسؤول عن تجهيز التقييمات حسب ملاحظات الاجتماع هو المشرف التقني على المشروع.
+B,meta-llama/llama-3.3-70b-instruct,T09,0,False,missing_answer:رصيد/API;missing_answer:تأخر/التسليم,done,4,4,search_notes|read_context|search_notes,0,6932,90,0.000972,4.75,لا توجد مخاطر مذكورة في خطة المشروع.
+B,meta-llama/llama-3.3-70b-instruct,T09,1,False,missing_answer:رصيد/API;missing_answer:تأخر/التسليم,done,5,5,search_notes|read_context|search_notes|read_context,0,9328,103,0.0013,5.65,لا توجد مخاطر مذكورة في خطة المشروع.
+B,meta-llama/llama-3.3-70b-instruct,T09,2,False,missing_answer:رصيد/API;missing_answer:تأخر/التسليم,done,5,5,search_notes|read_context|search_notes|read_context,0,9328,103,0.0013,5.85,لا توجد مخاطر مذكورة في خطة المشروع.
+B,meta-llama/llama-3.3-70b-instruct,T10,0,True,,done,2,2,read_context,0,3332,43,0.000467,2.41,مراجعة معيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.
+B,meta-llama/llama-3.3-70b-instruct,T10,1,True,,done,2,2,read_context,0,3332,43,0.000467,2.23,مراجعة معيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.
+B,meta-llama/llama-3.3-70b-instruct,T10,2,True,,done,2,2,read_context,0,3332,43,0.000467,2.28,مراجعة معيار وبروتوكول MCP وضمان عمل أدوات الوكيل بشكل سليم.
+B,meta-llama/llama-3.3-70b-instruct,T11,0,True,,done,3,3,read_context|read_context,0,5601,54,0.000778,4.42,لا يوجد رقم هاتف للمشرف التقني في السياق.
+B,meta-llama/llama-3.3-70b-instruct,T11,1,True,,done,3,3,read_context|read_context,0,5601,54,0.000778,3.33,لا يوجد رقم هاتف للمشرف التقني في السياق.
+B,meta-llama/llama-3.3-70b-instruct,T11,2,True,,done,3,3,read_context|read_context,0,5601,54,0.000778,3.31,لا يوجد رقم هاتف للمشرف التقني في السياق.
+B,meta-llama/llama-3.3-70b-instruct,T12,0,False,status:step_limit,step_limit,6,6,create_alert|create_alert|create_alert|create_alert|create_alert|create_alert,6,10085,300,0.001481,17.67,⚠️ تم الوصول لحد الخطوات (MAX_STEPS) قبل اكتمال الإجابة.
+B,meta-llama/llama-3.3-70b-instruct,T12,1,True,,done,3,3,create_alert|create_alert,2,4700,137,0.000689,7.09,"تم إنشاء تنبيه بعنوان ""تجهيز العرض"" ونص ""تجهيز شرائح العرض قبل الخميس"" بنجاح."
+B,meta-llama/llama-3.3-70b-instruct,T12,2,True,,done,3,3,create_alert|create_alert,2,4701,137,0.000689,7.1,"تم إنشاء تنبيه بعنوان ""تجهيز العرض"" ونص ""تجهيز شرائح العرض قبل الخميس"" بنجاح."
+B,meta-llama/llama-3.3-70b-instruct,T13,0,False,status:step_limit,step_limit,6,6,create_alert|create_alert|create_alert|create_alert|create_alert|create_alert,6,10136,306,0.001491,18.11,⚠️ تم الوصول لحد الخطوات (MAX_STEPS) قبل اكتمال الإجابة.
+B,meta-llama/llama-3.3-70b-instruct,T13,1,True,,done,3,3,create_alert|create_alert,2,4706,144,0.000693,8.08,"تم إرسال التنبيه بنجاح إلى supervisor@sdaia.gov.sa بعنوان ""تأكيد الموعد"" ونصه ""سيتم التسليم يوم الخميس""."
+B,meta-llama/llama-3.3-70b-instruct,T13,2,True,,done,3,3,create_alert|create_alert,2,4712,144,0.000694,8.28,"تم إرسال التنبيه بنجاح إلى supervisor@sdaia.gov.sa بعنوان ""تأكيد الموعد"" ونصه ""سيتم التسليم يوم الخميس""."
+B,meta-llama/llama-3.3-70b-instruct,T14,0,True,,done,2,2,list_alerts,0,3998,221,0.000628,10.31,هذه هي التنبيهات المحفوظة حاليًا:  1. تأكيد الموعد - سيتم التسليم يوم الخميس 2. تأكيد الموعد - سيتم التسليم يوم الخميس 3. تأكيد الموعد - سيتم التسليم يوم الخميس 4. تأكيد الموعد - سيتم التسليم يوم الخميس 5. تأكيد الموعد - سيتم التسليم يوم الخميس 6. تأكيد الموعد - سيتم التسليم يوم الخميس 7. تأكيد المو
+B,meta-llama/llama-3.3-70b-instruct,T14,1,True,,done,2,2,list_alerts,0,3998,221,0.000628,7.74,هذه هي التنبيهات المحفوظة حاليًا:  1. تأكيد الموعد - سيتم التسليم يوم الخميس 2. تأكيد الموعد - سيتم التسليم يوم الخميس 3. تأكيد الموعد - سيتم التسليم يوم الخميس 4. تأكيد الموعد - سيتم التسليم يوم الخميس 5. تأكيد الموعد - سيتم التسليم يوم الخميس 6. تأكيد الموعد - سيتم التسليم يوم الخميس 7. تأكيد المو
+B,meta-llama/llama-3.3-70b-instruct,T14,2,True,,done,2,2,list_alerts,0,3998,221,0.000628,9.0,هذه هي التنبيهات المحفوظة حاليًا:  1. تأكيد الموعد - سيتم التسليم يوم الخميس 2. تأكيد الموعد - سيتم التسليم يوم الخميس 3. تأكيد الموعد - سيتم التسليم يوم الخميس 4. تأكيد الموعد - سيتم التسليم يوم الخميس 5. تأكيد الموعد - سيتم التسليم يوم الخميس 6. تأكيد الموعد - سيتم التسليم يوم الخميس 7. تأكيد المو
+B,meta-llama/llama-3.3-70b-instruct,T15,0,True,,done,2,2,read_context,0,3344,92,0.000488,3.62,مرحبا! أنا مدار، وكي الذكاء الاصطناعي في نظام رفيق. أنا هنا لمساعدتك في إدارة جدولك وتنظيم مهامك وتذكيرك بالموعد النهائي لتقديم مشروعك. هل هناك شيء محدد تريد مساعدتي به؟
+B,meta-llama/llama-3.3-70b-instruct,T15,1,True,,done,3,3,read_context|read_context,0,5619,103,0.0008,4.89,مرحبا، أنا مدار، وكي الذكاء الاصطناعي في نظام رفيق. أنا هنا لمساعدتك في إدارة جدولك وتنظيم مهامك وتذكيرك بأهم الأحداث. هل هناك شيء محدد تود مساعدتي به؟
+B,meta-llama/llama-3.3-70b-instruct,T15,2,True,,done,3,3,read_context|read_context,0,5619,95,0.000797,5.58,مرحبا، أنا مدار، وكي الذكاء الاصطناعي في نظام رفيق. أنا هنا لمساعدتك في إدارة جدولك و مهامك و ميزانيتك و أتصالك و ملاحظاتك.
+B,meta-llama/llama-3.3-70b-instruct,T16,0,True,,done,3,3,search_notes|create_alert,1,4650,85,0.000662,5.61,تم إنشاء تنبيه بنجاح.
+B,meta-llama/llama-3.3-70b-instruct,T16,1,True,,done,3,3,search_notes|create_alert,1,4651,97,0.003371,3.78,تم العثور على موعد تسليم README في ملاحظة meeting_notes.md. تم إنشاء تنبيه لنفسي بذلك.
+B,meta-llama/llama-3.3-70b-instruct,T16,2,True,,done,3,3,search_notes|create_alert,1,4652,85,0.000662,5.22,تم إنشاء تنبيه بنجاح.
