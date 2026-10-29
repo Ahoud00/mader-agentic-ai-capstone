@@ -100,11 +100,15 @@ if st.session_state.page == "LANDING":
     st.markdown("<br><h1 style='text-align: center; font-size: 3.5rem;'>REFEEQ</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; font-size: 1.1rem; color: #888; font-weight: 300;'>INTEGRATED AGENTIC GRAPH WORKFLOW</p>", unsafe_allow_html=True)
     
-    # خدعة كسر الكاش البرمجية الصارمة بقراءة الصورة المحلية وإلحاق معرّف التحديث الإجباري لإجبار المتصفح على عرضها
-    if os.path.exists("dashbord.png"):
-        st.image("dashbord.png?v=2", use_container_width=True)
-    else:
-        st.warning("⏳ يرجى التأكد من وجود ملف الصورة داخل مجلد الـ VS Code باسم dashbord.png")
+    # عرض صورة الواجهة فقط إذا كان الملف صورة صالحة فعلًا (dashbord.png الحالي ملف نصي وليس صورة)
+    landing_image = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dashbord.png")
+    try:
+        from PIL import Image
+        with Image.open(landing_image) as img:
+            img.verify()
+        st.image(landing_image, use_container_width=True)
+    except Exception:
+        pass  # لا صورة صالحة: نتخطى العنصر دون التأثير على بقية الصفحة
         
     st.markdown("<p style='text-align: center; color: rgba(255,215,0,0.4); font-size: 0.8rem; letter-spacing: 2px;'>SYSTEM ARCHITECTURE INITIALIZED</p>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
